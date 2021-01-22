@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Typescript Starter`,
+    title: `LiveLot Typescript Starter`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
