@@ -1,0 +1,6 @@
+{
+  "plugins": [
+    "@emotion",
+    "@emotion/babel-preset-css-prop"
+  ]
+}
