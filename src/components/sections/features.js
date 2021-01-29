@@ -7,7 +7,7 @@ const Features = () => (
   <Section id="features">
     <StyledContainer>
       <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart Security</SectionTitle>
+      <SectionTitle>Smart Land Security</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
           <FeatureTitle>Machine Learning</FeatureTitle>

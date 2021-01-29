@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
+import { LiveLotCamera } from '../common/svgs/LiveLotCamera'
 
 import { Container } from "../global"
 
@@ -29,12 +30,12 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>Smart Security</Subtitle>
             <h1>
-              Your Safety,
+              Your Property,
               <br />
-              blah blah
+              is your Livelihood
             </h1>
             <h2>
-              We're building the next generation of smart security.
+              We're building the next generation of land security.
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
               <HeaderInput placeholder="Your email" />
@@ -46,7 +47,8 @@ const Header = () => {
             </FormSubtitle> */}
           </HeaderTextGroup>
           <ImageWrapper>
-            <StyledImage fluid={data.file.childImageSharp.fluid} />
+            {/* <StyledImage fluid={data.file.childImageSharp.fluid} /> */}
+            <LiveLotCamera />
             <br />
           </ImageWrapper>
         </Flex>

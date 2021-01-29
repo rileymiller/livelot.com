@@ -29,6 +29,7 @@ const theme = {
     secondary: "#007965",
     // accent: "#cca86e",
     accent: "#00af91",
+    logoAccent: `"#FAB042"`,
     background: {
       white: "#ffffff",
       light: "#f8f8f8",
