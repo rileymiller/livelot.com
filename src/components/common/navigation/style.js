@@ -27,8 +27,8 @@ export const NavListWrapper = styled.div`
     flex-direction: row;
 
     ${({ mobile }) =>
-      mobile &&
-      `
+    mobile &&
+    `
         flex-direction: column;
         margin-top: 1em;
 
@@ -48,7 +48,9 @@ export const NavItem = styled.li`
   a {
     text-decoration: none;
     opacity: 0.9;
-    color: ${props => props.theme.color.black.regular};
+    /* color: ${props => props.theme.color.black.regular}; */
+    color: ${props => props.theme.color.secondary};
+
   }
 
   &.active {
@@ -78,7 +80,8 @@ export const Brand = styled.div`
     padding: 0;
 
     a {
-      color: ${props => props.theme.color.black.regular};
+      /* color: ${props => props.theme.color.black.regular}; */
+      color: ${props => props.theme.color.secondary};
       text-decoration: none;
     }
   }
@@ -94,7 +97,9 @@ export const ActionsContainer = styled.div`
     font-family: ${props => props.theme.font.normal};
     ${props => props.theme.font_size.xsmall};
     color: white;
-    background: #098b8c;
+    /* background: #098b8c; */
+    /* background: ${props => props.theme.color.primary}; */
+    background: ${props => props.theme.color.secondary};
     border-radius: 4px;
     padding: 10px 16px;
     text-transform: uppercase;

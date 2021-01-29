@@ -24,12 +24,24 @@ const theme = {
 
   color: {
     // primary: "#071435",
-    primary: "#f58634",
+    // primary: "#f58634", // orange
+    // primary: "#ec5858", // red
+    // primary: "#09015f", // purple
+    primary: "#f37121", // another orange
+    // primary: "#000000",
     // secondary: "#098c8c",
-    secondary: "#007965",
+    // secondary: "#007965", // green
+    // secondary: "#09015f", // purple
+    secondary: `#1553f0`, // blue
+    // secondary: "#fd8c04",
     // accent: "#cca86e",
-    accent: "#00af91",
-    logoAccent: `"#FAB042"`,
+    // accent: "#00af91", // green
+    // accent: "#ec5858", // red
+    // accent: "#09015f", // purple
+    accent: "#1553f0", // blue
+    // accent: `#FAB042`, // orange
+    // accent: "#000000",
+    logoAccent: `#FAB042`, // orange
     background: {
       white: "#ffffff",
       light: "#f8f8f8",
