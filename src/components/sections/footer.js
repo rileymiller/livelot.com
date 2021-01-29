@@ -50,7 +50,8 @@ const FooterWrapper = styled.footer`
 const Logo = styled.div`
   font-family: ${props => props.theme.font.extrabold};
   ${props => props.theme.font_size.regular};
-  color: ${props => props.theme.color.black.regular};
+  /* color: ${props => props.theme.color.black.regular}; */
+  color: ${props => props.theme.color.secondary};
   text-decoration: none;
   letter-spacing: 1px;
   margin: 0;
@@ -92,7 +93,9 @@ const FooterColumn = styled.div`
     list-style: none;
     margin: 16px 0;
     padding: 0;
-    color: ${props => props.theme.color.black.regular};
+    /* color: ${props => props.theme.color.black.regular}; */
+    color: ${props => props.theme.color.secondary};
+
     li {
       margin-bottom: 12px;
       font-family: ${props => props.theme.font.normal};
