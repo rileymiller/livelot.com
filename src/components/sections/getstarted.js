@@ -1,13 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 
+import { Link } from "gatsby"
+
 import { Container, Section } from "../global"
 
 const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
       <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
-      <TryItButton>Get early access</TryItButton>
+      <TryItButton to="/earlyaccess">Get early access</TryItButton>
       {/* <Subtitle>No credit card required.</Subtitle> */}
     </GetStartedContainer>
   </StyledSection>
@@ -33,7 +35,7 @@ const GetStartedTitle = styled.h3`
   text-align: center;
 `
 
-const TryItButton = styled.button`
+const TryItButton = styled(Link)`
   font-weight: 500;
   font-size: 14px;
   color: white;
@@ -41,6 +43,9 @@ const TryItButton = styled.button`
   height: 60px;
   display: block;
   margin-left: 8px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
