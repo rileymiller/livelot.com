@@ -13,13 +13,13 @@ const Footer = () => (
           <li>Rewards</li>
         </ul>
       </FooterColumn> */}
-      <FooterColumn>
+      {/* <FooterColumn>
         <span>Resources</span>
         <ul>
           <li>Compare</li>
           <li>Blog</li>
         </ul>
-      </FooterColumn>
+      </FooterColumn> */}
       <FooterColumn>
         <span>Company</span>
         <ul>

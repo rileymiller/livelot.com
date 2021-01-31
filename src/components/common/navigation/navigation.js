@@ -2,20 +2,22 @@ import React, { Component } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
+import { Link } from "gatsby"
 
 import { Container } from "../../global"
 import {
+  ActionsContainer,
+  Brand,
+  LinkButton,
+  Mobile,
+  MobileMenu,
   Nav,
   NavItem,
-  Brand,
-  StyledContainer,
   NavListWrapper,
-  MobileMenu,
-  Mobile,
-  ActionsContainer,
+  StyledContainer,
 } from "./style"
 
-const NAV_ITEMS = ["Features", ""]
+const NAV_ITEMS = ["Features"]
 
 export default class Navigation extends Component {
   state = {
@@ -48,9 +50,9 @@ export default class Navigation extends Component {
   }
 
   getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+    <Link href={`/#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
       {item}
-    </AnchorLink>
+    </Link>
   )
 
   getNavList = ({ mobile = false }) => (
@@ -68,6 +70,10 @@ export default class Navigation extends Component {
     </NavListWrapper>
   )
 
+  signUpOnClick = () => {
+    window.location.href = window.location.host + "/earlyaccess"
+  }
+
   render() {
     const { mobileMenuOpen } = this.state
 
@@ -76,9 +82,9 @@ export default class Navigation extends Component {
         <StyledContainer>
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-              <AnchorLink href="#top" onClick={this.closeMobileMenu}>
+              <Link to="/" onClick={this.closeMobileMenu}>
                 LiveLot
-              </AnchorLink>
+              </Link>
             </Scrollspy>
           </Brand>
           <Mobile>
@@ -96,7 +102,7 @@ export default class Navigation extends Component {
 
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <button>Sign up</button>
+            <LinkButton to="/earlyaccess">Sign up</LinkButton>
           </ActionsContainer>
         </StyledContainer>
         <Mobile>

@@ -30,12 +30,12 @@ const Features = () => (
         <FeatureItem>
           <FeatureTitle>Solar-Powered</FeatureTitle>
           <FeatureText>
-            Our system has solar capability, if you need security off the grid. We support that.
+            Our product was made to work in remote areas, if you need security off the grid. We support that.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Dank Feature</FeatureTitle>
-          <FeatureText>Come up with some cool features you guys.</FeatureText>
+          <FeatureTitle>Privacy</FeatureTitle>
+          <FeatureText>Your privacy matters. You're the only one who will ever have access to the data and footage collected by your cameras.</FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>More Dankness</FeatureTitle>
@@ -83,7 +83,7 @@ const FeaturesGrid = styled.div`
 
 const FeatureItem = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 `

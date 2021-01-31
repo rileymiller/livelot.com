@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 import { Container } from "../../global"
 
+import { Link } from "gatsby"
+
 export const Nav = styled.nav`
   padding: ${props => (props.scrolled ? `16px 0` : `24px 0`)};
   position: fixed;
@@ -105,6 +107,20 @@ export const ActionsContainer = styled.div`
     text-transform: uppercase;
     font-size: 12px;
   }
+`
+export const LinkButton = styled(Link)`
+    font-family: ${props => props.theme.font.normal};
+    ${props => props.theme.font_size.xsmall};
+    color: white;
+    /* background: #098b8c; */
+    /* background: ${props => props.theme.color.primary}; */
+    background: ${props => props.theme.color.secondary};
+    border-radius: 4px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
 `
 
 export const Mobile = styled.div`
