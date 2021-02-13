@@ -10,25 +10,19 @@ const Features = () => (
       <SectionTitle>Smart Land Security</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Machine Learning</FeatureTitle>
+          <FeatureTitle>Automatic License Plate Recognition</FeatureTitle>
           <FeatureText>
-            We use bleeding-edge Machine Learning techniques to detect vehicles accurately, efficiently, and at night.
+            82% of crime happens in a vehicle. Our cameras automatically capture license plates to protect you in the event of crime.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Cloud-Native</FeatureTitle>
+          <FeatureTitle>Computer Vision</FeatureTitle>
           <FeatureText>
-            Our product lives in the cloud so you can monitor your property from anywhere.
+            We use cutting-edge Computer Vision techniques to detect vehicles accurately, efficiently, and at night.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
-          <FeatureText>
-            Create customized alerts for when a vehicle has entered your property.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Solar-Powered</FeatureTitle>
+          <FeatureTitle>Low-Power</FeatureTitle>
           <FeatureText>
             Our product was made to work in remote areas, if you need security off the grid. We support that.
           </FeatureText>
@@ -38,9 +32,15 @@ const Features = () => (
           <FeatureText>Your privacy matters. You're the only one who will ever have access to the data and footage collected by your cameras.</FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>More Dankness</FeatureTitle>
+          <FeatureTitle>Notifications</FeatureTitle>
           <FeatureText>
-            Another placeholder to talk about our dope product.
+            Sleep better at night and create customized alerts for when a vehicle has entered your property.
+          </FeatureText>
+        </FeatureItem>
+        <FeatureItem>
+          <FeatureTitle>Cloud-Native</FeatureTitle>
+          <FeatureText>
+            Access your footage from anywhere. Our product runs in the cloud and we hold your encrypted footage for 30 days.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
@@ -93,6 +93,7 @@ const FeatureTitle = styled.h4`
   letter-spacing: 0px;
   line-height: 30px;
   margin-bottom: 10px;
+  text-align: center;
 `
 
 const FeatureText = styled.p`
