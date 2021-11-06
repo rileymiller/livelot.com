@@ -50,7 +50,7 @@ export default class Navigation extends Component {
   }
 
   getNavAnchorLink = item => (
-    <Link href={`/#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+    <Link href={`/#${item.toLowerCase()}`} onClick={this.closeMobileMenu()}>
       {item}
     </Link>
   )
